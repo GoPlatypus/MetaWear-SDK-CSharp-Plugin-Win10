@@ -32,16 +32,9 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\MbientLab.MetaWear.DotNet.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MbientLab.MetaWear, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f347d771e6582141, processorArchitecture=MSIL">
-      <HintPath>..\packages\MetaWear.CSharp.1.0.0\lib\netstandard2.0\MbientLab.MetaWear.dll</HintPath>
+    <Reference Include="MbientLab.MetaWear, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f347d771e6582141, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetaWear.CSharp.1.1.0\lib\netstandard2.0\MbientLab.MetaWear.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
