@@ -48,11 +48,13 @@ namespace MbientLab.MetaWear.Win10 {
             }
 #else
             public async Task<Stream> LocalLoadAsync(string key) {
-                return await Task.FromResult(File.Open(Path.Combine(Directory.GetCurrentDirectory(), cachePath, macAddrStr, key), FileMode.Open));
+                return await Task.FromResult(File.Open(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    cachePath, macAddrStr, key), FileMode.Open));
             }
 
+
             public Task LocalSaveAsync(string key, byte[] data) {
-                var root = Path.Combine(Directory.GetCurrentDirectory(), cachePath, macAddrStr);
+                var root = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), cachePath, macAddrStr);
                 if (!Directory.Exists(root)) {
                     Directory.CreateDirectory(root);
                 }
